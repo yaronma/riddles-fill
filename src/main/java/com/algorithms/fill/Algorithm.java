@@ -2,6 +2,8 @@ package com.algorithms.fill;
 
 import java.util.Stack;
 
+import static org.junit.Assert.*;
+
 /**
  * Implementation of an algorithm to fill a grid of 2^n size that has one
  * missing cell with L-shaped tiles.
@@ -111,7 +113,15 @@ public class Algorithm {
 			iteration++;
 		}
 
-		return --iteration;
+		--iteration;
+		
+		// This part is just an assertion
+		assertEquals("Failed to fill the entire matrix...", root.getWidth()*root.getHeight(), root.filled());
+		
+		// In each iteration we add 3 cells (L-Shape) plus the first colored cell
+		assertEquals("Algorithm is not optimal!", iteration * 3 + 1, root.getWidth()*root.getHeight());
+			
+		return iteration; 
 	}
 
 	// Print the data in matrix form
