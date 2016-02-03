@@ -6,9 +6,11 @@ Given a matrix of size 2^n (where n is natural number; n = (1, 2, 3, 4, ...}) an
 
 ## Example
 Given the following matrix with a single painted cell:
+
 ![Problem](images/example1.with.cell.png)
 
 One of the solutions is illustrated in the following image:
+
 ![Solution](images/example1.solution.png)
 
 
