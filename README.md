@@ -17,4 +17,4 @@ One of the solutions is illustrated in the following image:
 
 
 ## The Algorithm
-The algorithm to solve this problem is a classic dividee-and-conquer where in each step we 'break' the matrix into four matrixes (hence the 2^n size restriction) and checking each matrix. we paint the three matrixes that don't have a cell with the next L-shaped tile.
+The algorithm to solve this problem is a classic divide-and-conquer where in each step we 'break' the matrix into four matrixes (hence the 2^n size restriction) and checking each matrix. we paint the three matrixes that don't have a cell with the next L-shaped tile.
